@@ -8,6 +8,7 @@ import java.util.Iterator;
 public interface Sport  {
     /**
      * method used by each sport for the needed to practice it
+     *
      */
     public double kalkuliereZeit();
 
