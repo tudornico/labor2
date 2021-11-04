@@ -64,22 +64,22 @@ public class Benutzer  {
      */
     public double kalkuliereZeit() {
         double result = 0;
-        for (int i = 0; i < this.sport.size(); i++) {
-            result += this.sport.get(i).kalkuliereZeit();
+        for (int index = 0; index < this.sport.size(); index++) {
+            result += this.sport.get(index).kalkuliereZeit();
         }
         return result;
     }
 
     /**
-     * adds up the nedded for a particular sport
-     * @param variable instance of a sport variable
+     * adds up the needed for a particular sport
+     * @param sport instance of a sport variable
      * @return the total amount
      */
-    public double kalkuliereZeit(Sport variable) {
+    public double kalkuliereZeit(Sport sport) {
         double result = 0;
-        for (int i = 0; i < this.sport.size(); i++) {
-            if (this.sport.get(i) ==variable ) {
-                result += this.sport.get(i).kalkuliereZeit();
+        for (int index = 0; index < this.sport.size(); index++) {
+            if (this.sport.get(index) ==sport ) {
+                result += this.sport.get(index).kalkuliereZeit();
             }
         }
         return result;
@@ -91,8 +91,8 @@ public class Benutzer  {
      */
     public double kalkuliereDurchschnittszeit(){
         double result=0,counter=0;
-        for(int i=0;i<this.sport.size();i++){
-            result+=this.sport.get(i).kalkuliereZeit();
+        for(int index=0;index<this.sport.size();index++){
+            result+=this.sport.get(index).kalkuliereZeit();
             counter++;
         }
         return result/counter;
